@@ -1,0 +1,9 @@
+version: '3'
+services: 
+    web:
+        build: ./docker/golang
+        tty: true
+        volumes:  
+            - ./:/www/bonebase
+        ports: 
+            - "8080:8080"

@@ -1,15 +1,16 @@
 # Bone
 
-## How to run web server
+## Docker を使った環境構築
+まだ未完成ではありますが、ホームページの表示のみできます。
 
-### Requirements
-
-* golang v1.16.2
-
-### Run command
-
+### 環境構築方法
+コンテナを起動させる
 ```
-go run main.go
+docker-compose build 
+docker-compose up -d
 ```
 
-Then, accsess to `localhost:8080` on your browser.
+Webアプリの実行
+```
+docker-compose exec web go run main.go
+```

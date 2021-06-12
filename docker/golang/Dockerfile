@@ -1,0 +1,7 @@
+FROM golang:1.16
+
+ARG WORKDIR=/www/bonebase
+WORKDIR ${WORKDIR}
+RUN mkdir -p ${WORKDIR}
+
+EXPOSE 8080
